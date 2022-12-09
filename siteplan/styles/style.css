@@ -1,0 +1,155 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+}
+
+.header-section {
+    grid-area: header;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e8faab;
+    border-radius: 10px;
+}
+
+
+/* styling for the grid layout */
+
+.home-grid {
+    grid-area: main;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #e8faab;
+    border-radius: 10px;
+}
+
+.footer-section {
+    grid-area: footer;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 15px;
+    background-color: #e8faab;
+    border-radius: 10px;
+    /* position: fixed; */
+    bottom: 0;
+    /* width: 100%; */
+}
+
+
+/* styling for navigation */
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+
+/* stying for the buy.html child page */
+
+.buy-grid {
+    grid-area: main;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #e8faab;
+    border-radius: 10px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.card {
+    display: grid;
+    margin: 5px;
+    padding: 10px;
+}
+
+.card>.buy-btn {
+    margin: 10px 0 0 0;
+    padding: 5px;
+    color: green;
+}
+
+.card>.buy-btn:hover {
+    color: #ffffff;
+    background-color: #16e816;
+}
+
+
+/* styling for the promotions.html page */
+
+.promotions-grid {
+    grid-area: main;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #e8faab;
+    border-radius: 10px;
+}
+
+.title-header {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.item-img {
+    background-color: #000000;
+    color: #f4f4f4;
+    width: 30%;
+}
+
+.promotion-card {
+    display: grid;
+}
+
+.form-control {
+    padding: 10px;
+    text-align: left;
+}
+
+.form-control>input {
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.promote-btn {
+    margin: 10px 0 0 0;
+    padding: 5px;
+    background-color: #96ff04;
+    color: rgb(4, 4, 4);
+    width: 20%;
+}
